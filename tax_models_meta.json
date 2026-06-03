@@ -1,0 +1,134 @@
+{
+  "performance": [
+    {
+      "tax_head": "dt",
+      "model": "ardl",
+      "smape_all": 11.18,
+      "h1_smape": 9.54,
+      "h3_smape": 6.35,
+      "rmse_pct": 10.73,
+      "n_test": 5,
+      "mae_pct": 11.18
+    },
+    {
+      "tax_head": "dt",
+      "model": "arimax",
+      "smape_all": 11.3,
+      "h1_smape": 1.34,
+      "h3_smape": 5.87,
+      "rmse_pct": 9.69,
+      "n_test": 5,
+      "mae_pct": 11.3
+    },
+    {
+      "tax_head": "dt",
+      "model": "enet",
+      "smape_all": 12.41,
+      "h1_smape": 18.59,
+      "h3_smape": 7.81,
+      "rmse_pct": 14.03,
+      "n_test": 5,
+      "mae_pct": 12.41
+    },
+    {
+      "tax_head": "gst",
+      "model": "ardl",
+      "smape_all": 6.95,
+      "h1_smape": 11.38,
+      "h3_smape": 6.65,
+      "rmse_pct": 9.85,
+      "n_test": 5,
+      "mae_pct": 6.95
+    },
+    {
+      "tax_head": "gst",
+      "model": "arimax",
+      "smape_all": 5.75,
+      "h1_smape": 7.65,
+      "h3_smape": 7.55,
+      "rmse_pct": 7.6,
+      "n_test": 5,
+      "mae_pct": 5.75
+    },
+    {
+      "tax_head": "gst",
+      "model": "enet",
+      "smape_all": 6.76,
+      "h1_smape": 0.84,
+      "h3_smape": 4.81,
+      "rmse_pct": 6.61,
+      "n_test": 5,
+      "mae_pct": 6.76
+    },
+    {
+      "tax_head": "fed",
+      "model": "ardl",
+      "smape_all": 10.54,
+      "h1_smape": 10.38,
+      "h3_smape": 12.99,
+      "rmse_pct": 11.82,
+      "n_test": 5,
+      "mae_pct": 10.54
+    },
+    {
+      "tax_head": "fed",
+      "model": "arimax",
+      "smape_all": 13.51,
+      "h1_smape": 0.75,
+      "h3_smape": 17.3,
+      "rmse_pct": 16.29,
+      "n_test": 5,
+      "mae_pct": 13.51
+    },
+    {
+      "tax_head": "fed",
+      "model": "enet",
+      "smape_all": 11.47,
+      "h1_smape": 14.75,
+      "h3_smape": 15.99,
+      "rmse_pct": 14.41,
+      "n_test": 5,
+      "mae_pct": 11.47
+    },
+    {
+      "tax_head": "customs",
+      "model": "ardl",
+      "smape_all": 15.24,
+      "h1_smape": 16.35,
+      "h3_smape": 16.92,
+      "rmse_pct": 18.28,
+      "n_test": 4,
+      "mae_pct": 15.24
+    },
+    {
+      "tax_head": "customs",
+      "model": "arimax",
+      "smape_all": 14.91,
+      "h1_smape": 6.56,
+      "h3_smape": 18.64,
+      "rmse_pct": 16.88,
+      "n_test": 4,
+      "mae_pct": 14.91
+    },
+    {
+      "tax_head": "customs",
+      "model": "enet",
+      "smape_all": 10.57,
+      "h1_smape": 6.01,
+      "h3_smape": 10.84,
+      "rmse_pct": 10.48,
+      "n_test": 4,
+      "mae_pct": 10.57
+    }
+  ],
+  "data_span": {
+    "start": "1995",
+    "end": "2026",
+    "n": 31
+  },
+  "backtest_config": {
+    "n_test": 5,
+    "method": "expanding-window",
+    "selection_metric": "smape_all (avg OOS sMAPE), rmse_pct tiebreaker"
+  }
+}

@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+data/
+*.csv
+
+# Allow necessary Excel data files
+!tax_prepared_data.xlsx
+!buoyancy_estimates.xlsx
+
+
